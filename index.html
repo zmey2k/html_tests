@@ -33,8 +33,6 @@
       loadTableData(tableData);
     };
 
-    loadTableData(tableData);
-
     function loadTableData(tableData){
       const tableBody=document.getElementById(tableData);
       let dataHtml='';
@@ -42,7 +40,7 @@
       for(let i of tableData){
         dataHtml+=`<tr><td>${i.name}</td><td>${i.name}</td></tr>`;
       }
-    }
+    };
 
 
   </script>
