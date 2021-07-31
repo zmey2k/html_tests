@@ -19,8 +19,32 @@
 
   </style>
 
-  <script src="./script.js">
-  
+  <script>
+    let sortDirection=false;
+    let tableData=[
+      {name: 'Dylan', age:31},
+      {name: 'Christopher', age:30},
+      {name: 'Israel', age: 29},
+      {name: 'TugNasty', age: 14},
+      {name: 'Dollan', age: 31}
+    ];
+    
+    window.onload=()=>{
+      loadTableData(tableData);
+    };
+
+    loadTableData(tableData);
+
+    function loadTableData(tableData){
+      const tableBody=document.getElementById(tableData);
+      let dataHtml='';
+
+      for(let i of tableData){
+        dataHtml+=`<tr><td>${i.name}</td><td>${i.name}</td></tr>`;
+      }
+    }
+
+
   </script>
 
 
@@ -32,8 +56,7 @@
         <th>Age</th>
       </tr>
       </thread>
-      <tbody id="tableData">
-      </tbody>
+      <tbody id="tableData"></tbody>
     </table>
 
     <!-- youtube video uild a Dynamic able with Sorting -->
@@ -62,3 +85,4 @@
     </button>
   </body>
 </html>
+ 
