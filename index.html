@@ -34,18 +34,19 @@
     };
 
     function loadTableData(tableData){
-      const tableBody=document.getElementById(tableData);
+      const tableBody=document.getElementById('tableData');
       let dataHtml='';
 
       for(let i of tableData){
         dataHtml+=`<tr><td>${i.name}</td><td>${i.name}</td></tr>`;
       }
+      console.log(dataHtml);
+
       tableBody.innerHTML=dataHtml;
-    };
+    }
 
 
   </script>
-
 
   <body>
     <table>
