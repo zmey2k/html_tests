@@ -24,8 +24,10 @@
 
   </style>
 
+  <script src="https://cdn.jsdelivr.net/npm/d3-fetch@3"></script>
+
   <script>
-    const data=await d3.csv("C:/tomsoyer/work001Git/html_tests/data.csv");
+    const data=d3.csv("C:/tomsoyer/work001Git/html_tests/data.csv")
     console.log(data);
 
     let sortDirection=false;
