@@ -25,6 +25,9 @@
   </style>
 
   <script>
+    const data=await d3.csv("C:/tomsoyer/work001Git/html_tests/data.csv");
+    console.log(data);
+
     let sortDirection=false;
     let tableData=[
       {name: 'Dylan', age:31},
@@ -33,9 +36,6 @@
       {name: 'TugNasty', age: 14},
       {name: 'Dollan', age: 31}
     ];
-
-    const data=await d3.csv("C:/tomsoyer/work001Git/html_tests/data.csv");
-    console.log(data);
     
     window.onload=()=>{
       loadTableData(tableData);
