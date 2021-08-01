@@ -27,7 +27,7 @@
 
   <script type="module">
     import {csv} from "https://cdn.skypack.dev/d3-fetch@3";
-    csv("https://github.com/zmey2k/html_tests/blob/main/data.csv").then((data)=>{
+    csv("https://github.com/zmey2k/html_tests/blob/main/data.csv", {mode:'no-cors'}).then((data)=>{
       console.log(data);
     });
 
