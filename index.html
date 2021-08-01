@@ -46,7 +46,7 @@
     };
 
     function loadTableData(data){
-      const tableBody1=document.getElementById('data');
+      const tableBody=document.getElementById('data');
       let dataHtml='';
 
       for (let i in data){
@@ -54,7 +54,7 @@
       }
       console.log(dataHtml);
 
-      tableBody1.innerHTML=dataHtml;
+      tableBody.innerHTML=dataHtml;
     }
 
 
