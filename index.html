@@ -49,7 +49,7 @@
       const tableBody=document.getElementById('tableData');
       let dataHtml='';
 
-      for (let i in tableData){
+      for(let i of tableData){
         dataHtml+=`<tr><td>${i.name}</td><td>${i.age}</td></tr>`;
       }
       console.log(dataHtml);
