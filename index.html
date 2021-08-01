@@ -27,19 +27,19 @@
 
   <script type="module">
     import {csv} from "https://cdn.skypack.dev/d3-fetch@3";
-    csv("https://github.com/zmey2k/html_tests/blob/main/data.csv", {mode:'no-cors'}).then((tableData)=>{
-      console.log(tableData);
+    csv("https://github.com/zmey2k/html_tests/blob/main/data.csv", {mode:'no-cors'}).then((data)=>{
+      console.log(data);
     });
 
     let sortDirection=false;
 
-    // let tableData=[
-    //   {name: 'Dylan', age:31},
-    //   {name: 'Christopher', age:30},
-    //   {name: 'Israel', age: 29},
-    //   {name: 'TugNasty', age: 14},
-    //   {name: 'Dollan', age: 31}
-    // ];
+    let tableData=[
+      {name: 'Dylan', age:31},
+      {name: 'Christopher', age:30},
+      {name: 'Israel', age: 29},
+      {name: 'TugNasty', age: 14},
+      {name: 'Dollan', age: 31}
+    ];
     
     window.onload=()=>{
       loadTableData(tableData);
@@ -61,20 +61,7 @@
   </script>
 
   <body>
-    <table>
-      <thread>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-      </tr>
-      </thread>
-      <tbody id="tableData"></tbody>
-    </table>
 
-    <!-- youtube video uild a Dynamic able with Sorting -->
-    <h1>table be above</h1>
-    <br>
-    <br>
     <p>"Hi to my lovely wify, to her: "</p>
     <ul>
       <li>Booty;</li>
@@ -95,6 +82,22 @@
                    font-weight: bold;">
       CSS EXAMPLE BUTTON
     </button>
+
+    <h1>table be below</h1>
+    <br>
+    <br>
+    <table>
+      <thread>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      </thread>
+      <tbody id="tableData"></tbody>
+    </table>
+
+    <!-- youtube video uild a Dynamic able with Sorting -->
+    
   </body>
 </html>
  
