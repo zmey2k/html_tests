@@ -33,29 +33,29 @@
   <script>
     let sortDirection=false;
 
-    let tableData=[
-      {name: 'Dylan', age:31},
-      {name: 'Christopher', age:30},
-      {name: 'Israel', age: 29},
-      {name: 'TugNasty', age: 14},
-      {name: 'Dollan', age: 31}
-    ];
+    // let tableData=[
+    //   {name: 'Dylan', age:31},
+    //   {name: 'Christopher', age:30},
+    //   {name: 'Israel', age: 29},
+    //   {name: 'TugNasty', age: 14},
+    //   {name: 'Dollan', age: 31}
+    // ];
     
-    window.onload=()=>{
-      loadTableData(tableData);
-    };
+    // window.onload=()=>{
+    //   loadTableData(tableData);
+    // };
 
-    function loadTableData(tableData){
-      const tableBody=document.getElementById('tableData');
-      let dataHtml='';
+    // function loadTableData(tableData){
+    //   const tableBody=document.getElementById('tableData');
+    //   let dataHtml='';
 
-      for(let i of tableData){
-        dataHtml+=`<tr><td>${i.name}</td><td>${i.age}</td></tr>`;
-      }
-      console.log(dataHtml);
+    //   for(let i of tableData){
+    //     dataHtml+=`<tr><td>${i.name}</td><td>${i.age}</td></tr>`;
+    //   }
+    //   console.log(dataHtml);
 
-      tableBody.innerHTML=dataHtml;
-    }
+    //   tableBody.innerHTML=dataHtml;
+    // }
 
     let data=[	
       {
@@ -106,7 +106,7 @@
       }
       console.log(dataHtml1);
 
-      tableBody1.innerHTML=dataHtml1
+      tableBody1.innerHTML=dataHtml1;
     }
 
 
@@ -138,7 +138,7 @@
     <h1>table be below</h1>
     <br>
     <br>
-    <table>
+    <!-- <table>
       <thread>
       <tr>
         <th>Name</th>
@@ -146,8 +146,21 @@
       </tr>
       </thread>
       <tbody id="tableData"></tbody>
-    </table>
+    </table> -->
 
+    <table>
+      <thread>
+      <tr>
+        <th>car name</th>
+        <th>miles_gallon</th>        
+        <th>cylinders</th>
+        <th>displacement</th>
+        <th>horsepower</th>
+        
+      </tr>
+      </thread>
+      <tbody id="tableData"></tbody>
+    </table>
     <!-- youtube video uild a Dynamic able with Sorting -->
     
   </body>
