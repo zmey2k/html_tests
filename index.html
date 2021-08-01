@@ -33,14 +33,49 @@
   <script>
     let sortDirection=false;
 
-    let tableData=[
-      {name: 'Dylan', age:31},
-      {name: 'Christopher', age:30},
-      {name: 'Israel', age: 29},
-      {name: 'TugNasty', age: 14},
-      {name: 'Dollan', age: 31}
-    ];
+    // let tableData=[
+    //   {name: 'Dylan', age:31},
+    //   {name: 'Christopher', age:30},
+    //   {name: 'Israel', age: 29},
+    //   {name: 'TugNasty', age: 14},
+    //   {name: 'Dollan', age: 31}
+    // ];
     
+    let tableData=[
+	{
+		"car_name": "chevrolet chevelle malibu",
+		"milesgallon": "18",
+		"cylinders": "8",
+		"displacement": "307",
+		"horsepower": "130",
+		"weight": "3504",
+		"acceleration": "12",
+		"model_year": "70",
+		"origin": "1"
+	},
+	{
+		"car_name": "buick skylark 320",
+		"milesgallon": "15",
+		"cylinders": "8",
+		"displacement": "350",
+		"horsepower": "165",
+		"weight": "3693",
+		"acceleration": "11.5",
+		"model_year": "70",
+		"origin": "1"
+	},
+	{
+		"car_name": "plymouth satellite",
+		"milesgallon": "18",
+		"cylinders": "8",
+		"displacement": "318",
+		"horsepower": "150",
+		"weight": "3436",
+		"acceleration": "11",
+		"model_year": "70",
+		"origin": "1"
+	}
+]
     window.onload=()=>{
       loadTableData(tableData);
     };
@@ -50,7 +85,7 @@
       let dataHtml='';
 
       for(let i of tableData){
-        dataHtml+=`<tr><td>${i.name}</td><td>${i.age}</td></tr>`;
+        dataHtml+=`<tr><td>${i.car_name}</td><td>${i.cylinders}</td></tr>`;
       }
       console.log(dataHtml);
 
@@ -89,8 +124,8 @@
     <table>
       <thread>
       <tr>
-        <th>Name</th>
-        <th>Age</th>
+        <th>car_name</th>
+        <th>cylinders</th>
       </tr>
       </thread>
       <tbody id="tableData"></tbody>
