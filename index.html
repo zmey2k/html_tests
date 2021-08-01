@@ -25,18 +25,10 @@
   </style>
 
 
-  <script>
-    const fs=require('fs');
-    const Papa=require('papaparse');
-    
-    let data;
-    Papa.parse("C:/tomsoyer/work001Git/html_tests/data.csv",{
-      header:true,
-      dynamicTyping: true,
-      complete: function(results) {
-        console.log(results);
-        data=results.data
-      }
+  <script type="module">
+    import {csv} from "https://cdn.skypack.dev/d3-fetch@3";
+    csv("https://github.com/zmey2k/html_tests/blob/main/data.csv").then((data)=>{
+      console.log(data);
     });
 
 
