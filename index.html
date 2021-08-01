@@ -25,12 +25,12 @@
   </style>
 
 
-  <script type="module">
+  <!-- <script type="module">
     import {csv} from "https://cdn.skypack.dev/d3-fetch@3";
     csv("https://github.com/zmey2k/html_tests/blob/main/data.csv", {mode:'no-cors'}).then((data)=>{
       console.log(data);
-    });
-
+    }); -->
+  <script>
     let sortDirection=false;
 
     let tableData=[
@@ -55,6 +55,58 @@
       console.log(dataHtml);
 
       tableBody.innerHTML=dataHtml;
+    }
+
+    let data=[	
+      {
+        "car_name": "\"chevrolet chevelle malibu\"",
+        "miles_gallon": "18",
+        "cylinders": "8",
+        "displacement": "307",
+        "horsepower": "130",
+        "weight": "3504",
+        "acceleration": "12",
+        "model year": "70",
+        "origin": "1"
+      },
+      {
+        "car_name": "\"buick skylark 320\"",
+        "miles_gallon": "15",
+        "cylinders": "8",
+        "displacement": "350",
+        "horsepower": "165",
+        "weight": "3693",
+        "acceleration": "11.5",
+        "model_year": "70",
+        "origin": "1"
+      },
+      {
+        "car_name": "\"plymouth satellite\"",
+        "miles_gallon": "18",
+        "cylinders": "8",
+        "displacement": "318",
+        "horsepower": "150",
+        "weight": "3436",
+        "acceleration": "11",
+        "model_year": "70",
+        "origin": "1"
+      }
+    ];
+
+    window.onload=()=>{
+      loadTableData1(data);
+    };
+
+    function loadTableData1(data){
+      const tableBody1=document.getElementById('data');
+      let dataHtml1='';
+
+      for (let n in data){
+        dataHtml1+=`<tr><td>${n.car_name}</td><td>${n.miles_gallon}</td><td>${n.cylinders}</td><td>${n.displacement}</td><td>${n.horsepower}</td></tr>`;
+      }
+      console.log(dataHtml1);
+
+      tableBody1.innerHTML=dataHtml1
     }
 
 
