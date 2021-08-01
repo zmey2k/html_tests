@@ -96,19 +96,19 @@
     ];
 
     window.onload=()=>{
-      loadTableData1(data);
+      loadTableData(data);
     };
 
-    function loadTableData1(data){
+    function loadTableData(data){
       const tableBody1=document.getElementById('data');
-      let dataHtml1='';
+      let dataHtml='';
 
-      for (let n in data){
-        dataHtml1+=`<tr><td>${n.name}</td><td>${n.age}</td></tr>`;
+      for (let i in data){
+        dataHtml+=`<tr><td>${i.name}</td><td>${i.age}</td></tr>`;
       }
-      console.log(dataHtml1);
+      console.log(dataHtml);
 
-      tableBody1.innerHTML=dataHtml1;
+      tableBody1.innerHTML=dataHtml;
     }
 
 
