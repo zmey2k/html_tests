@@ -84,7 +84,8 @@
       let dataHtml='';
 
       for(let i of tableData){
-        dataHtml+=`<tr><td>${i.car_name}</td><td>${i.cylinders}</td></tr>`;
+        dataHtml+=`<tr><td>${i.car_name}</td><td>${i.milesgallon}</td><td>${i.cylinders}</td><td>${i.displacement}</td>
+          <td>${i.horsepower}</td><td>${i.weight}</td><td>${i.acceleration}</td><td>${i.model_year}</td><td>${i.origin}</td></tr>`;
       }
       console.log(dataHtml);
 
