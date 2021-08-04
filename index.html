@@ -78,7 +78,7 @@
       for(let i of tableData){
         dataHtml+=`<tr>
                     <td>${i.car_name}</td>
-                    <td><span class="label label-success">${i.milesgallon}</span></td>
+                    <td><span class="label label-low">${i.milesgallon}</span></td>
                     <td>${i.cylinders}</td>
                     <td>${i.displacement}</td>
                     <td>${i.horsepower}</td>
@@ -101,10 +101,13 @@
           <div class="col-sm-6">
             <div class="btn-group" data-goggle="buttons">
               <label class="btn btn-info active">
-                <input type="radio" name="milesgallon" value="18" checked="checked"> 18
+                <input type="radio" name="milesgallon" value="all" checked="checked">All
               </label>
-              <label class="btn btn-success">
-                <input type="radio" name="milesgallon" value="15"> 15
+              <label class="btn btn-low">
+                <input type="radio" name="milesgallon" value="18">18
+              </label>
+              <label class="btn btn-high">
+                <input type="radio" name="milesgallon" value="15">15
               </label>
             </div>
           </div>
